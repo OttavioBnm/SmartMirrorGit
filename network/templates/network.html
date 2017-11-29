@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+	<head>
+    		<title>Configuration des reseaux</title>
+	</head>
+	<body>
+		<h1>Liste des reseaux: </h1>
+		<form method="POST" action="/network_connect">
+			{% for network in networks%}
+			<input type='radio' name='network' value='{{network}}'/>{{network}}<br>
+			{% endfor %}
+			<legend>Password : <legend>
+    			<input type='text' name='password'/>
+		<form>
+	</body>
+</html>
