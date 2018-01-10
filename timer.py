@@ -178,5 +178,7 @@ class Timer:
     def update_display(self):
         d.UpdateView()
 
+if __name__ == "__main__":
+    Timer()
 
 
